@@ -6,6 +6,7 @@ const END_POINT = 'http://localhost:8090'
 
 function App(){
   const [socket] = useState(io(END_POINT))
+  // const socket = io(END_POINT)
 
   return (
       <Chat socket={socket}/>
